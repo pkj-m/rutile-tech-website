@@ -39,6 +39,13 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
+    /* Old-money aesthetic gradients and effects */
+    --gradient-paper: linear-gradient(135deg, hsl(45 15% 96%), hsl(42 12% 94%), hsl(40 10% 92%));
+    --gradient-subtle: linear-gradient(180deg, hsl(45 15% 97%), hsl(45 10% 95%));
+    --shadow-elegant: 0 20px 60px -20px hsl(220 15% 25% / 0.1);
+    --shadow-text: 0 2px 8px hsl(220 15% 25% / 0.05);
+    --texture-grain: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.02'/%3E%3C/svg%3E");
+
     --sidebar-background: 0 0% 98%;
 
     --sidebar-foreground: 240 5.3% 26.1%;
