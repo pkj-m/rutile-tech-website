@@ -5,7 +5,7 @@ const Index = () => {
       <div className="absolute inset-0 bg-texture-grain opacity-30"></div>
       
       {/* Main content container */}
-      <div className="relative z-10 h-full w-full flex flex-col justify-between px-4 sm:px-8 md:px-12 lg:px-20 py-4 sm:py-6 md:py-8 lg:py-16">
+      <div className="relative z-10 h-full w-full flex flex-col justify-between px-4 sm:px-8 md:px-12 lg:px-20 py-4 sm:py-6 md:py-8 lg:py-16 pb-8 sm:pb-12 md:pb-8 lg:pb-16">
         {/* Main content area - left-aligned and vertically centered */}
         <div className="flex-1 flex items-center min-h-0">
           <div className="w-full max-w-[80%] sm:max-w-[75%] md:max-w-4xl lg:max-w-5xl">
@@ -18,7 +18,7 @@ const Index = () => {
         </div>
         
         {/* Elegant separator line */}
-        <div className="absolute left-4 sm:left-8 lg:left-12 top-1/2 w-px h-12 sm:h-16 md:h-24 lg:h-32 bg-gradient-to-b from-transparent via-border to-transparent transform -translate-y-6 sm:-translate-y-8 md:-translate-y-12 lg:-translate-y-16"></div>
+        <div className="hidden lg:block absolute left-12 top-1/2 w-px h-32 bg-gradient-to-b from-transparent via-border to-transparent transform -translate-y-16"></div>
         
         {/* Footer - contact link */}
         <footer className="pb-2 sm:pb-4 md:pb-6 lg:pb-8 pl-2 sm:pl-4 flex-shrink-0">
