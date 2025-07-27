@@ -23,7 +23,7 @@ const Index = () => {
         {/* Footer - contact link */}
         <footer className="pb-2 sm:pb-4 md:pb-6 lg:pb-8 pl-2 sm:pl-4 flex-shrink-0">
           <a 
-            href="mailto:contact@rutiletech.com" 
+            href="mailto:pankajmishra1511@gmail.com" 
             className="group relative text-muted-foreground text-xs sm:text-sm tracking-wider font-light hover:text-foreground transition-all duration-500 ease-out"
           >
             <span className="relative z-10">contact</span>
