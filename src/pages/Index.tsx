@@ -9,26 +9,49 @@ const Index = () => {
         {/* Main content area - left-aligned and vertically centered */}
         <div className="flex-1 flex items-center min-h-0">
           <div className="w-full max-w-[80%] sm:max-w-[75%] md:max-w-4xl lg:max-w-5xl">
-            <h1 className="font-serif text-[14vw] sm:text-[12vw] md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-foreground leading-tight tracking-wide animate-fade-in">
-              <span className="block drop-shadow-text">Rutile</span>
-              <span className="block text-muted-foreground drop-shadow-text">Technologies,</span>
-              <span className="block text-muted-foreground/80 drop-shadow-text">Inc.</span>
-            </h1>
+            <div className="animate-fade-in">
+              <h1 className="font-serif text-[12vw] sm:text-[10vw] md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-foreground leading-tight tracking-wide drop-shadow-text">
+                Pankaj Mishra
+              </h1>
+              <p className="mt-4 sm:mt-6 md:mt-8 text-muted-foreground text-sm sm:text-base md:text-lg lg:text-xl font-light tracking-wide leading-relaxed max-w-2xl">
+                Software Engineer at Uber. Passionate about the intersection of business and technology.
+              </p>
+            </div>
           </div>
         </div>
         
         {/* Elegant separator line */}
         <div className="hidden lg:block absolute left-12 top-1/2 w-px h-32 bg-gradient-to-b from-transparent via-border to-transparent transform -translate-y-16"></div>
         
-        {/* Footer - contact link */}
+        {/* Footer - navigation links */}
         <footer className="pb-2 sm:pb-4 md:pb-6 lg:pb-8 pl-2 sm:pl-4 flex-shrink-0">
-          <a 
-            href="mailto:pankajmishra1511@gmail.com" 
-            className="group relative text-muted-foreground text-xs sm:text-sm tracking-wider font-light hover:text-foreground transition-all duration-500 ease-out"
-          >
-            <span className="relative z-10">contact</span>
-            <span className="absolute bottom-0 left-0 w-0 h-px bg-foreground transition-all duration-500 ease-out group-hover:w-full"></span>
-          </a>
+          <nav className="flex items-center gap-6 sm:gap-8">
+            <a 
+              href="mailto:pankajmishra1511@gmail.com" 
+              className="group relative text-muted-foreground text-xs sm:text-sm tracking-wider font-light hover:text-foreground transition-all duration-500 ease-out"
+            >
+              <span className="relative z-10">contact</span>
+              <span className="absolute bottom-0 left-0 w-0 h-px bg-foreground transition-all duration-500 ease-out group-hover:w-full"></span>
+            </a>
+            <a 
+              href="https://github.com/pankajmishra" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative text-muted-foreground text-xs sm:text-sm tracking-wider font-light hover:text-foreground transition-all duration-500 ease-out"
+            >
+              <span className="relative z-10">github</span>
+              <span className="absolute bottom-0 left-0 w-0 h-px bg-foreground transition-all duration-500 ease-out group-hover:w-full"></span>
+            </a>
+            <a 
+              href="https://linkedin.com/in/pankajmishra" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative text-muted-foreground text-xs sm:text-sm tracking-wider font-light hover:text-foreground transition-all duration-500 ease-out"
+            >
+              <span className="relative z-10">linkedin</span>
+              <span className="absolute bottom-0 left-0 w-0 h-px bg-foreground transition-all duration-500 ease-out group-hover:w-full"></span>
+            </a>
+          </nav>
         </footer>
       </div>
       
