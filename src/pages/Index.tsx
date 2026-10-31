@@ -5,11 +5,11 @@ const Index = () => (
     </header>
     <section className="introduction" aria-labelledby="headline">
       <h1 id="headline">Agentic software engineering needs a new primitive<span className="period">.</span></h1>
-      <p className="subtitle">The Agentic Development Environment — you design and decide, agents make it green.</p>
+      <p className="subtitle">The Agentic Development Environment: you design and decide, agents make it green.</p>
     </section>
     <figure className="system">
       <figcaption><span>FIG. 01</span> DESIGN OWNS THE TESTS. AGENTS CAN'T TOUCH THEM.</figcaption>
-      <p className="fig-note" aria-hidden="true"><span>DEC-0042</span> RETRIES IN CLIENT, NOT QUEUE — ACCEPTED</p>
+      <p className="fig-note" aria-hidden="true"><span>DEC-0042</span> RETRIES IN CLIENT, NOT QUEUE · ACCEPTED</p>
       <div className="flow" aria-label="The engineer decides. The design compiles to tests. Agents work the red until it is green. The system stays green.">
         <div className="node human"><span className="node-label">DECIDES</span><strong>Engineer</strong></div>
         <span className="connector" aria-hidden="true">→</span>
@@ -25,7 +25,7 @@ const Index = () => (
       <a className="contact" href="mailto:pankaj@rutiletech.com">Let's talk <span aria-hidden="true">↗</span></a>
     </section>
     <footer className="title-block" aria-label="Title block">
-      <span className="col title"><span>Title</span>ADE — AGENTIC DEVELOPMENT ENVIRONMENT</span>
+      <span className="col title"><span>Title</span>ADE: AGENTIC DEVELOPMENT ENVIRONMENT</span>
       <span className="col"><span>Drawn by</span>RUTILE TECHNOLOGIES, INC.</span>
       <span className="col"><span>Scale</span>NONE</span>
       <span className="col"><span>Rev</span>A</span>
