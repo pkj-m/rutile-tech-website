@@ -8,8 +8,7 @@ const Index = () => (
       <p className="subtitle">The Agentic Development Environment: you design and decide, agents make it green.</p>
     </section>
     <figure className="system">
-      <figcaption><span>FIG. 01</span> NOTHING IS TRUSTED. EVERYTHING IS VERIFIED AGAINST THE DESIGN.</figcaption>
-      <p className="fig-note" aria-hidden="true"><span>DEC-0042</span> RETRIES IN CLIENT, NOT QUEUE · ACCEPTED</p>
+      <figcaption><span>FIG. 01</span> NOTHING IS TRUSTED. EVERYTHING IS VERIFIED AGAINST THE DESIGN.<span className="fig-note" aria-hidden="true">DEC-0042 · RETRIES IN CLIENT, NOT QUEUE · ACCEPTED</span></figcaption>
       <div className="flow" aria-label="You edit the design. Tests are derived from the design and cannot be edited by agents. Agents write code. Tests verify every change. The verdict, match or disagree, returns to you.">
         <div className="node human"><span className="node-label">YOU EDIT</span><strong>Design</strong></div>
         <span className="connector" aria-hidden="true">→</span>
