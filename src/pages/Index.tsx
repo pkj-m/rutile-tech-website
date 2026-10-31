@@ -9,21 +9,29 @@ const Index = () => (
     </section>
     <figure className="system">
       <figcaption><span>FIG. 01</span> DESIGN OWNS THE TESTS. AGENTS CAN'T TOUCH THEM.</figcaption>
+      <p className="fig-note" aria-hidden="true"><span>DEC-0042</span> RETRIES IN CLIENT, NOT QUEUE — ACCEPTED</p>
       <div className="flow" aria-label="The engineer decides. The design compiles to tests. Agents work the red until it is green. The system stays green.">
         <div className="node human"><span className="node-label">DECIDES</span><strong>Engineer</strong></div>
         <span className="connector" aria-hidden="true">→</span>
         <div className="node human"><span className="node-label">COMPILES TO TESTS</span><strong>Design</strong></div>
         <span className="connector" aria-hidden="true">→</span>
-        <div className="node"><span className="node-label">WORK THE RED</span><strong>Agents</strong></div>
+        <div className="node work"><span className="node-label">WORK THE RED</span><strong>Agents</strong></div>
         <span className="connector" aria-hidden="true">→</span>
-        <div className="node"><span className="node-label">STAYS GREEN</span><strong>System</strong></div>
+        <div className="node done"><span className="node-label">STAYS GREEN</span><strong>System</strong></div>
       </div>
     </figure>
     <section className="invitation" aria-label="Contact">
       <div><p>We're building it.</p><a className="email" href="mailto:pankaj@rutiletech.com">pankaj@rutiletech.com</a></div>
       <a className="contact" href="mailto:pankaj@rutiletech.com">Let's talk <span aria-hidden="true">↗</span></a>
     </section>
-    <footer><span>Rutile Technologies, Inc.</span><span>© {new Date().getFullYear()}</span></footer>
+    <footer className="title-block" aria-label="Title block">
+      <span className="col title"><span>Title</span>ADE — AGENTIC DEVELOPMENT ENVIRONMENT</span>
+      <span className="col"><span>Drawn by</span>RUTILE TECHNOLOGIES, INC.</span>
+      <span className="col"><span>Scale</span>NONE</span>
+      <span className="col"><span>Rev</span>A</span>
+      <span className="col"><span>Sheet</span>1 OF 1</span>
+      <span className="col"><span>Year</span>{new Date().getFullYear()}</span>
+    </footer>
   </main>
 );
 
