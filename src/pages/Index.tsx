@@ -8,17 +8,18 @@ const Index = () => (
       <p className="subtitle">The Agentic Development Environment: you design and decide, agents make it green.</p>
     </section>
     <figure className="system">
-      <figcaption><span>FIG. 01</span> DESIGN OWNS THE TESTS. AGENTS CAN'T TOUCH THEM.</figcaption>
+      <figcaption><span>FIG. 01</span> NOTHING IS TRUSTED. EVERYTHING IS VERIFIED AGAINST THE DESIGN.</figcaption>
       <p className="fig-note" aria-hidden="true"><span>DEC-0042</span> RETRIES IN CLIENT, NOT QUEUE · ACCEPTED</p>
-      <div className="flow" aria-label="The engineer decides. The design compiles to tests. Agents work the red until it is green. The system stays green.">
-        <div className="node human"><span className="node-label">DECIDES</span><strong>Engineer</strong></div>
+      <div className="flow" aria-label="You edit the design. Tests are derived from the design and cannot be edited by agents. Agents write code. Tests verify every change. The verdict, match or disagree, returns to you.">
+        <div className="node human"><span className="node-label">YOU EDIT</span><strong>Design</strong></div>
         <span className="connector" aria-hidden="true">→</span>
-        <div className="node human"><span className="node-label">COMPILES TO TESTS</span><strong>Design</strong></div>
+        <div className="node derived"><span className="node-label">DERIVED FROM DESIGN</span><strong>Tests</strong><span className="node-sub">AGENTS CAN'T EDIT</span></div>
         <span className="connector" aria-hidden="true">→</span>
-        <div className="node work"><span className="node-label">WORK THE RED</span><strong>Agents</strong></div>
+        <div className="node work"><span className="node-label">AGENTS WRITE IT</span><strong>Code</strong></div>
         <span className="connector" aria-hidden="true">→</span>
-        <div className="node done"><span className="node-label">STAYS GREEN</span><strong>System</strong></div>
+        <div className="node done"><span className="node-label">MATCH OR DISAGREE</span><strong>Verified</strong></div>
       </div>
+      <div className="verdict" aria-hidden="true"><span>VERDICT RETURNS TO YOU</span></div>
     </figure>
     <section className="invitation" aria-label="Contact">
       <div><p>We're building it.</p><a className="email" href="mailto:pankaj@rutiletech.com">pankaj@rutiletech.com</a></div>
