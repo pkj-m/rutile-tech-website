@@ -1,114 +1,29 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap');
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
-@layer base {
-  :root {
-    /* Ivory/muted color scheme */
-    --background: 45 15% 96%;
-    --foreground: 220 15% 25%;
-
-    --card: 45 20% 98%;
-    --card-foreground: 220 15% 25%;
-
-    --popover: 45 20% 98%;
-    --popover-foreground: 220 15% 25%;
-
-    --primary: 220 15% 25%;
-    --primary-foreground: 45 20% 98%;
-
-    --secondary: 45 10% 90%;
-    --secondary-foreground: 220 15% 25%;
-
-    --muted: 45 10% 88%;
-    --muted-foreground: 220 10% 45%;
-
-    --accent: 45 12% 85%;
-    --accent-foreground: 220 15% 25%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 45 20% 98%;
-
-    --border: 45 8% 85%;
-    --input: 45 8% 85%;
-    --ring: 220 15% 25%;
-
-    --radius: 0.5rem;
-
-    /* Old-money aesthetic gradients and effects */
-    --gradient-paper: linear-gradient(135deg, hsl(45 15% 96%), hsl(42 12% 94%), hsl(40 10% 92%));
-    --gradient-subtle: linear-gradient(180deg, hsl(45 15% 97%), hsl(45 10% 95%));
-    --shadow-elegant: 0 20px 60px -20px hsl(220 15% 25% / 0.1);
-    --shadow-text: 0 2px 8px hsl(220 15% 25% / 0.05);
-    --texture-grain: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.02'/%3E%3C/svg%3E");
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    /* Dark mode ivory/muted colors */
-    --background: 220 15% 8%;
-    --foreground: 45 15% 85%;
-
-    --card: 220 15% 10%;
-    --card-foreground: 45 15% 85%;
-
-    --popover: 220 15% 10%;
-    --popover-foreground: 45 15% 85%;
-
-    --primary: 45 15% 85%;
-    --primary-foreground: 220 15% 15%;
-
-    --secondary: 220 10% 15%;
-    --secondary-foreground: 45 15% 85%;
-
-    --muted: 220 10% 18%;
-    --muted-foreground: 45 8% 60%;
-
-    --accent: 220 12% 20%;
-    --accent-foreground: 45 15% 85%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 45 15% 85%;
-
-    --border: 220 10% 20%;
-    --input: 220 10% 20%;
-    --ring: 45 15% 70%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-  }
-}
+:root { font-family: Inter, system-ui, sans-serif; color: #292621; background: #f5f2eb; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+* { box-sizing: border-box; }
+body { margin: 0; font-size: 16px; line-height: 1.8; }
+main { width: min(100%, 1100px); min-height: 100svh; margin: 0 auto; padding: 110px 64px 30px; display: flex; flex-direction: column; }
+.introduction { position: relative; padding-top: 30px; }
+.introduction::before { content: ''; position: absolute; top: 0; left: 0; width: 32px; height: 2px; background: #96583e; }
+h1 { font-family: Newsreader, Georgia, serif; font-size: clamp(40px, 4.7vw, 62px); font-weight: 400; line-height: 1.08; letter-spacing: -.035em; margin: 0 0 28px; }
+h1 span { display: block; }
+p { margin: 0 0 20px; }
+.subtitle { font-size: 17px; font-weight: 500; letter-spacing: -.025em; max-width: 570px; margin-bottom: 0; }
+.letter { max-width: 540px; margin: 64px 0 0 15%; }
+.body-copy { color: #5e5951; }
+.body-copy p:last-child { margin-bottom: 0; }
+.invitation { margin-top: 42px; }
+.invitation p { margin: 0 0 8px; font-size: 14px; color: #5e5951; }
+a { color: #87492f; text-decoration-color: #c3a08e; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+a:hover { color: #542c1c; text-decoration-color: currentColor; }
+a:focus-visible { outline: 2px solid #96583e; outline-offset: 6px; border-radius: 2px; }
+.contact { font-size: 18px; font-weight: 500; text-decoration: none; }
+.contact span { display: inline-block; margin-left: 9px; }
+.contact:hover { text-decoration: underline; }
+.email { display: block; width: fit-content; margin-top: 10px; font-size: 13px; color: #6e665c; text-decoration: none; overflow-wrap: anywhere; }
+.email:hover { text-decoration: underline; }
+footer { color: #776f64; margin-top: auto; padding-top: 68px; font-size: 12px; letter-spacing: .01em; }
+.footer-inner { display: flex; justify-content: space-between; gap: 24px; border-top: 1px solid #dcd5ca; padding-top: 20px; }
+::selection { background: #e8d5c6; color: #292621; }
+@media (max-width: 700px) { main { padding: 64px 28px 24px; } h1 { font-size: clamp(38px, 7vw, 49px); } h1 span { display: inline; } h1 span + span::before { content: ' '; } .subtitle { font-size: 16px; } .letter { margin: 44px 0 0; } body { font-size: 15px; } .invitation { margin-top: 34px; } footer { padding-top: 56px; } }
