@@ -72,7 +72,7 @@ a:focus-visible { outline: 2px solid var(--blue); outline-offset: 6px; }
 .contact { font-size: 14px; font-weight: 500; text-decoration: none; white-space: nowrap; }
 .contact span { margin-left: 14px; }
 .contact:hover { text-decoration: underline; }
-.title-block { display: grid; grid-template-columns: 2.2fr 1.6fr .7fr .5fr .7fr .9fr; border: 1px solid var(--line); margin-top: auto; }
+.title-block { display: grid; grid-template-columns: 2.2fr 1.6fr .7fr .5fr .7fr .9fr; border: 1px solid var(--line); margin: 18px 0 16px; }
 .title-block .col { display: flex; flex-direction: column; gap: 2px; padding: 8px 10px 9px; border-right: 1px solid var(--line); font: 9px/1.4 var(--mono); color: #6d7683; letter-spacing: .06em; background: #fff; }
 .title-block .col:last-child { border-right: 0; }
 .title-block .col span { color: #99a1ad; font-size: 7px; letter-spacing: .09em; }
